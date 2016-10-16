@@ -1,0 +1,45 @@
+import numpy as np
+x=np.array([1,2,3,4])
+print x
+print x.shape
+Y=np.array([[1,2],[3,4]])
+print Y.shape
+print Y
+x=np.linspace(0,15,25)
+print x
+np.zeros((5,5))
+np.eye(5)
+x=np.random.randn(4,4)
+print x
+y=x[:,:1]
+print y
+z=x[[2,0],:]
+print z
+a=x[-1,:]
+b=x[x<0.7]
+print b
+
+c=np.arange(4)+0.1
+print c
+d=np.arange(4)+np.array([0.5,0.5,0.5,0.5])
+print d
+A=np.arange(6).reshape(3,2)
+B=np.arange(3)
+print A
+print B
+
+s=raw_input('waht IS life')
+print s.lower()
+
+from nltk.stem.wordnet import WordNetLemmatizer
+lmtzr = WordNetLemmatizer()
+d = lmtzr.lemmatize('cars','v')
+print d
+
+string = 'hello world'
+print len(string)
+
+X = numpy.array(data_T)[:3]
+print X.shape
+print X
+print X[1, 1]
